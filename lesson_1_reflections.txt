@@ -1,0 +1,33 @@
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    you can find your mistake more quickly if you have BUGs.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    优缺点：手动提交的话是由coder自行决定的，coder根据逻辑来决定什么时候提交，即便出现BUG，coder也能从git里面迅速发现错误。git对于coder们来说，无论是团队还是个人，那都是非常重要的。
+而Google Docs是自行保存的，比较适合于 长期编写文档的工作人员，它的保存是无逻辑性可言的，所以万一忘记了保存，Google会自动帮助你保存。
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    git 的多文件提交方便了coder，例如一位coder要实现某个功能，为实现这个功能可能更改了多个文件
+（不同种类的文件），这样出现BUG时，以功能为单位能很快发现错误
+Google的原因针对的是不一样的人群。
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log 可以输出commit上去的版本信息
+    git log --stat 可以查看增加了多少行代码 减少了多少行代码
+    git diff a b
+    其中a，b分别是版本号的id，a是旧版本 b是新版本
+
+How might using version control make you more confident to make changes that
+could break something?
+	从代码编写的最初开始，只要按功能一步步保证之前的代码正确，即便有错误回复到之前的版本即可
+	若是修改错误，也可返回相应的版本号。
+Now that you have your workspace set up, what do you want to try using Git for?
+
+   做项目开发时按逻辑将每一步的功能更改后上传git，记录过程
