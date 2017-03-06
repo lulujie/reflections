@@ -1,0 +1,20 @@
+What happens when you initialize a repository? Why do you need to do it?
+初始化一个git仓库，让你可以进行commit
+
+How is the staging area different from the working directory and the repository?
+暂存区是介于工作目录和版本库之间的一块区域
+通过git add /git reset来设置暂存区，最后可用来提交
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
