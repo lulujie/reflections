@@ -7,14 +7,20 @@ How is the staging area different from the working directory and the repository?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
-
+先将文件add到暂存区，然后用命令git diff --staged比较暂存区和版本库的不同
+如果确认正确，则commit
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-
+当你想对项目做出新的功能时，利用git branch 创建新的分支。然后用git checkout 切换分支目录
+分支功能强大，当你想做某个功能时，你就能放下手中的分支，去另外一个分支工作。
 How do the diagrams help you visualize the branch structure?
+可以用命令git log --graph --oneline 显示图表
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
-
+在当前检出的分支上将2个branch合并。合并之后能看见2个branch各自的commit，他们的commit是
+按提交时间排序的，所以可能会有交叉。
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+自动合并准确率高不会出错，如果有冲突提示让人解决
+而手动合并都需要coder去操作，出错几率会加大
